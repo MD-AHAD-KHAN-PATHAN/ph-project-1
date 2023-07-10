@@ -93,6 +93,7 @@ ul li a:hover {
     background-image: url('images/bg.png'), url('images/developer.png');
     background-repeat: no-repeat;
     background-position: bottom right, bottom left;
+    background-size: auto, 90px;
     background-color: rgb(242, 250, 247);
 }
 
