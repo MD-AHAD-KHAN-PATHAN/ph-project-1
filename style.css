@@ -15,14 +15,14 @@ nav {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    position: block;
+    position: fixed;
+    width: 100%;
 }
 
 nav .web-title {
     font-weight: 800;
     font-size: 40px;
     line-height: normal;
-
 }
 
 nav .primary-color {
@@ -54,12 +54,12 @@ ul li a:hover {
 .btn {
     padding: 12px 10px;
     background-color: aqua;
-    border: none;
     font-size: 16px;
     font-weight: 600;
     border-radius: 5px;
     color: white;
     cursor: pointer;
+    border: 1px solid aqua;
 }
 
 .btn:hover {
@@ -89,11 +89,10 @@ ul li a:hover {
 /* Header Style */
 
 .header {
-    height: 100vh;
     background-image: url('images/bg.png'), url('images/developer.png');
     background-repeat: no-repeat;
     background-position: bottom right, bottom left;
-    background-size: auto, 90px;
+    background-size: auto, 80px;
     background-color: rgb(242, 250, 247);
 }
 
@@ -132,7 +131,6 @@ ul li a:hover {
 /* About Section */
 
 .about-me {
-    height: 100vh;
     display: flex;
     text-align: center;
     justify-content: center;
@@ -177,7 +175,6 @@ th {
     text-align: center;
     justify-content: center;
     padding: 0 140px 100px;
-    height: 100vh;
 }
 
 .skill-content {
@@ -258,7 +255,6 @@ th {
 /* Footer Section */
 
 .footer {
-    height: 100vh;
     display: flex;
     background-color: rgb(223, 251, 242);
     padding: 100px 140px;
@@ -302,4 +298,90 @@ th {
     color: #757575;
     width: 100%;
     border: 1px solid aqua;
+}
+
+.hide {
+    display: none;
+}
+
+@media screen and (max-width: 576px) {
+
+    /*-----About Section-----*/
+    .about-me {
+        padding: 0;
+    }
+    .about-content {
+        padding: 20px;
+    }
+    .about-title {
+        font-size: 30px 0;
+    }
+    .about-discription {
+        font-size: 12px;
+    }
+    th {
+        font-size: 12px;
+        padding: 0 15px;
+    }
+    td {
+        font-size: 10px;
+        padding: 0;
+    }
+
+    /*-----Skill Section-----*/
+    .skills {
+        padding: 20px;
+    }
+    .skills-box {
+        flex-direction: column;
+        margin-top: 0;
+    }
+    .skill-content {
+        padding: 10px;
+    }
+    .about-title-skill {
+        font-size: 30px;
+    }
+    .box {
+        margin-top: 10px;
+        margin-left: 0;
+        padding: 30px;
+    }
+    .box p {
+        font-size: 14px;
+    }
+
+    /*----- Resume Section ------*/
+    .resume {
+        padding-top: 20px;
+    }
+    .resume-content {
+        flex-direction: column;
+        padding: 40px 40px 30px;
+    }
+    .resume-title {
+        font-size: 30px;
+    }
+    .resume-header {
+        font-size: 25px;
+    }
+    .education2 {
+        margin-top: 30px;
+    }
+
+    /*----- Footer Section -----*/
+    .footer {
+        flex-direction: column;
+        padding: 20px 0;
+    }
+    .footer-left {
+        width: 100%;
+        padding: 20px 20px 0;
+        margin-right: 0;
+    }
+    .footer-right {
+        width: 100%;
+        padding: 20px 20px 0;
+    }
+    
 }
