@@ -313,6 +313,9 @@ th {
     .banner {
         padding: 30px 0 30px 10px;
     }
+    .banner-contant {
+        padding-top: 40px;
+    }
     nav {
         flex-direction: column;
         position: relative;
