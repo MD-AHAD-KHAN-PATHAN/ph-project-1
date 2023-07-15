@@ -15,8 +15,7 @@ nav {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    position: fixed;
-    width: 100%;
+    width: auto;
 }
 
 nav .web-title {
@@ -92,7 +91,7 @@ ul li a:hover {
     background-image: url('images/bg.png'), url('images/developer.png');
     background-repeat: no-repeat;
     background-position: bottom right, bottom left;
-    background-size: auto, 80px;
+    background-size: auto, 90px;
     background-color: rgb(242, 250, 247);
 }
 
